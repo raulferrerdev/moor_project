@@ -22,4 +22,17 @@ class AppDatabase extends _$AppDatabase {
 
   @override
   int get schemaVersion => 1;
+
+  // Queries
+  // Get all users
+  Future<List<User>> getAllUsers() => select(users).get();
+
+  // Add user
+  Future insertUser(User user) => into(users).insert(user);
+
+  // Update user
+  Future updateUser(User user) => update(users).replace(user);
+
+  // Delete user
+  Future deleteUser(User user) => delete(users).delete(user);
 }

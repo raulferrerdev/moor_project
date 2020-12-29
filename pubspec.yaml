@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.1
+  get_it: ^5.0.3
   moor_flutter: ^3.1.0
   path_provider: ^1.6.24
 
